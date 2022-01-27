@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    
+    background-image: url(assets/images/giallo.jpg);
+    background-size: 100%;
+}
+
+nav {
+    background-image: url(assets/images/navbar.jpg);
+    background-size: 100%;
+}
+
+nav, form, th {
+    font-family: fantasy;
+}
+
+td, input {
+    font-family: cursive;
+}
+
+.card {
+    background-image: url(assets/images/navbar.jpg);
+    background-size: 100%;
+}
