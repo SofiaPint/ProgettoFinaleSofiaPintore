@@ -16,8 +16,8 @@ export class Cliente {
     cognomeContatto!: string;
     telefonoContatto!: string;
     emailContatto!: string;
-    indirizzoSedeOperativa?: IndirizzoSedeOperativa;
-    indirizzoSedeLegale?: IndirizzoSedeLegale;
+    indirizzoSedeOperativa!: IndirizzoSedeOperativa;
+    indirizzoSedeLegale!: IndirizzoSedeLegale;
     dataInserimento!: string;
     dataUltimoContatto!: string;
     fatturatoAnnuale?: number;

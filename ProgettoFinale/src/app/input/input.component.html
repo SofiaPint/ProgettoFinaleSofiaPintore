@@ -1,62 +1,136 @@
+<!--<div class="container">
+  <form>
+    <div class=" row my-5">
+      <div class="col">
+        <input type="text" class="my-1" [(ngModel)]="cliente.ragioneSociale" name="ragioneSociale"
+          placeholder="Ragione Sociale...">
+      </div>
+      <div class="col">
+        <input type="text" class="my-1" [(ngModel)]="cliente.partitaIva" name="partitaIva" placeholder="Partita Iva...">
+      </div>
+      <div class="col">
+        <input type="text" class="my-1" [(ngModel)]="cliente.tipoCliente" name="tipoCliente"
+          placeholder="Tipo Cliente...">
+      </div>
+      <div class="col">
+        <input type="email" class="my-1" [(ngModel)]="cliente.email" name="email" placeholder="Email...">
+      </div>
+    </div>
 
-<form class="container">
-<div class="form-row my-5">
-    <div class="col">
-      <input type="text"  [(ngModel)]= "cliente.ragioneSociale" name="ragioneSociale" placeholder="Ragione Sociale...">
-    </div>
-    <div class="col">
-      <input type="text" [(ngModel)]= "cliente.partitaIva" name="partitaIva"  placeholder="Partita Iva...">
-    </div>
-    <div class="col">
-      <input type="text"  [(ngModel)]= "cliente.tipoCliente" name="tipoCliente"  placeholder="Tipo Cliente...">
-      <select>
-      <option>
-        
-      </option>
-      </select>
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.email" name="email"placeholder="Email...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.pec" name="email"placeholder="Pec...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.telefono" name="email"placeholder="Telefono...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.nomeContatto" name="email"placeholder="Nome Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.cognomeContatto" name="email"placeholder="Cognome Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.telefonoContatto" name="email"placeholder="Telefono Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "cliente.emailContatto" name="email"placeholder="Email Contatto...">
-    </div>
-    <!---Indirizzo sede legale-->
-    <div class="col">
-      <input type="email" [(ngModel)]= "indirizzo.via" name="email"placeholder="Email Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "indirizzo.civico" name="email"placeholder="Email Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "indirizzo.cap" name="email"placeholder="Email Contatto...">
-    </div>
-    <div class="col">
-      <input type="email" [(ngModel)]= "indirizzo.localita" name="email"placeholder="Email Contatto...">
-    </div>
-    <select> 
-      <option>
-        
-      </option>
-    </select>
 
-    <div class="col">
-      <button class="bg-dark text-white my-1"  (click)="add()"><i class="bi bi-person-plus"></i></button>
-    </div>
+    <div class="row">
+      <div class="col">
+        <input type="email" class="my-1" [(ngModel)]="cliente.pec" name="email" placeholder="Pec...">
+      </div>
+      <div class="col">
+        <input type="email" class="my-1" [(ngModel)]="cliente.telefono" name="email" placeholder="Telefono...">
+      </div>
+      <div class="col">
+        <input type="email" class="my-1" [(ngModel)]="cliente.nomeContatto" name="email" placeholder="Nome Contatto...">
+      </div>
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="cliente.cognomeContatto" name="email"
+            placeholder="Cognome Contatto...">
+        </div>
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="cliente.telefonoContatto" name="email"
+            placeholder="Telefono Contatto...">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="cliente.emailContatto" name="email"
+            placeholder="Email Contatto...">
+        </div>
+        Indirizzo sede legale
+       
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="indirizzo.via" name="email" placeholder="Via...">
+        </div>
+
+        <div class="row">
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="indirizzo.civico" name="email" placeholder="Civico...">
+        </div>
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="indirizzo.cap" name="email" placeholder="Cap...">
+        </div>
+        </div>
+        <div class="col">
+          <input type="email" class="my-1" [(ngModel)]="indirizzo.localita" name="Località"
+            placeholder="Località...">
+        </div>
+        <select>
+          <option>
+
+          </option>
+        </select>
+
+        <div class="col">
+          <button class="bg-dark text-white my-1" (click)="add()"><i class="bi bi-person-plus"></i></button>
+        </div>
+      </div>
+    
+
+  </form>--->
+  <form>
+    <div class="container">
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.ragioneSociale">Ragione Sociale</label>
+      <input type="text" class="form-control" aria-describedby="emailHelp">
   </div>
-</form>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.partitaIva">Partita Iva</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.tipoCliente">Tipo Cliente</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.email">Email</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.pec">Pec</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.telefono">Telefono</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.nomeContatto">Nome Contatto</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.cognomeContatto">Cognome contatto</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.telefonoContatto">Telefono contatto</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label" [(ngModel)]="cliente.emailContatto">Email contatto</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      
+    </div>
+    
+  </div>
+  </form>
